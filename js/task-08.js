@@ -11,18 +11,11 @@ function handleSubmit(event) {
     console.log(password);
   });
 
-  // const formEmail = event.currentTarget.elements.email.value
-  // const formPassword = event.currentTarget.elements.password.value
-
-  // if (formEmail === '' || formPassword === '') {
-  //     return alert('Please fill in all the fields!')
-  // }
-
   const {
     elements: { email, password },
   } = event.currentTarget;
 
-  if (email.value === "" || password.value === "") {
+  if (!email.value || !password.value) {
     return alert("Please fill in all the fields!");
   }
 

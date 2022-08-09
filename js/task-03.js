@@ -21,12 +21,10 @@ const imagesList = images
       `<li><img class = "picture" width = 500px src = ${image.url} alt = ${image.alt}></li>`
   )
   .join("");
-console.log(imagesList);
 
 gallerylist.insertAdjacentHTML("beforeend", imagesList);
 
 gallerylist.style.display = "flex";
 gallerylist.style.flexDirection = "column";
-gallerylist.style.alignItems = "center"
+gallerylist.style.alignItems = "center";
 gallerylist.style.listStyle = "none";
-
